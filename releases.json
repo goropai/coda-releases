@@ -1,0 +1,192 @@
+[
+  {
+    "version": "1.0.7",
+    "date": "2026-10-07",
+    "title": {
+      "uk": "Виправлення після ручного тестування",
+      "en": "Fixes from a full manual test"
+    },
+    "highlights": {
+      "uk": [
+        "«Відтворити мікс» після «Перший перехід» більше не грає перший трек у тиші",
+        "Перехід можна вести через фейд після останньої бочки аж до кінця треку; мітку виходу не засунути туди, де перехід не вміщується, а прослуховування звучить так само, як живий перехід",
+        "Збережений мікс і рендер беруть ті самі мітки, що на хвилі; відкриті Mix-вкладки після перезапуску відновлюються точно такими, якими були",
+        "Тональність у тезі в іншому записі (Dm проти 7A) і половинний темп більше не фарбуються червоним",
+        "Перемикання мови змінює весь інтерфейс, разом із Mix-вкладками, списками переходу й діалогами",
+        "Дрібниці: справжній масштаб біля кнопок зуму, зрозумілі повідомлення про зниклий чи пошкоджений файл, цілі підписи кнопок на вузькому вікні"
+      ],
+      "en": [
+        "Play mix after First transition no longer plays the first track in silence",
+        "A transition may run through the fade after the last kick up to the end of the track; the exit cue cannot be moved where no transition fits, and the preview sounds exactly like the live transition",
+        "A saved mix and its render use the same cues as the waveform; open Mix tabs come back after a restart exactly as they were",
+        "A key written differently in the tag (Dm against 7A) and half tempo are no longer shown in red",
+        "Switching the language changes the whole interface, Mix tabs, transition lists and dialogs included",
+        "Smaller things: the real zoom level beside the zoom buttons, clear messages about a missing or damaged file, whole button labels on a narrow window"
+      ]
+    }
+  },
+  {
+    "version": "1.0.6",
+    "date": "2026-10-07",
+    "title": {
+      "uk": "Перший запуск із заставкою",
+      "en": "A first start with a splash screen"
+    },
+    "highlights": {
+      "uk": [
+        "Перший запуск одразу показує заставку з поступом завантаження моделей аналізу стилю (~350 МБ), а не порожній екран на кілька хвилин",
+        "Обірване завантаження моделі (закрили програму, зникла мережа) більше не ламає аналіз стилю: недокачаний файл не вважається моделлю"
+      ],
+      "en": [
+        "The first start shows the splash screen with the progress of the style-analysis model download (~350 MB) straight away, instead of an empty screen for several minutes",
+        "An interrupted model download (app closed, network lost) no longer breaks style analysis: an incomplete file is not taken for a model"
+      ]
+    }
+  },
+  {
+    "version": "1.0.5",
+    "date": "2026-10-06",
+    "title": {
+      "uk": "Удвічі менший інсталятор",
+      "en": "An installer half the size"
+    },
+    "highlights": {
+      "uk": [
+        "Інсталятор зменшився з 196 до 107 МБ: з нього прибрано налагоджувальні символи й бібліотеки для інших систем, яких програма на Windows ніколи не завантажує",
+        "Coda більше не залишає 10,8 МБ у тимчасовій теці при кожному запуску, а накопичене раніше прибирає сама",
+        "Перша версія, яку можна отримати через «Довідка → Перевірити оновлення» з 1.0.4"
+      ],
+      "en": [
+        "The installer shrank from 196 to 107 MB: debug symbols and libraries for other systems, which the Windows app never loads, are gone",
+        "Coda no longer leaves 10.8 MB in the temp folder on every start, and clears what earlier versions left there",
+        "The first version that 1.0.4 can install through Help → Check for updates"
+      ]
+    }
+  },
+  {
+    "version": "1.0.4",
+    "date": "2026-10-06",
+    "title": {
+      "uk": "Оновлення з програми, нові меню",
+      "en": "Updates from the app, new menus"
+    },
+    "highlights": {
+      "uk": [
+        "«Довідка → Перевірити оновлення» і тиха перевірка під час запуску: Coda сама завантажує нову версію, звіряє її контрольну суму, встановлюється й перезапускається",
+        "Після оновлення відкривається вікно «Що нового», а вся історія — у «Довідка → Історія змін»",
+        "Меню не тягнуться через пів екрана, а потрібні пункти позначено значками; «Вигляд» тепер містить мову й тему",
+        "Ліцензії сторонніх компонентів показуються так само, як інші вікна довідки, і відкриваються миттєво",
+        "Поле пошуку акуратніше вписане в рядок вкладок",
+        "Ліцензійна угода 1.2: про перевірку оновлень і хто надає програму"
+      ],
+      "en": [
+        "Help → Check for updates and a quiet check at startup: Coda downloads the new version, verifies its checksum, installs it and restarts",
+        "After an update a What is new window opens, and the full history is under Help → Release history",
+        "Menus no longer stretch across half the screen, and the items people look for have icons; View now holds the language and theme",
+        "Third-party licences look like the other Help windows and open instantly",
+        "The search field sits more neatly in the tab row",
+        "License agreement 1.2: about the update check and who provides the program"
+      ]
+    }
+  },
+  {
+    "version": "1.0.3",
+    "date": "2026-10-06",
+    "title": {
+      "uk": "Різновиди переходів, мікс з теки й пошук",
+      "en": "Transition variants, folder mixes and search"
+    },
+    "highlights": {
+      "uk": [
+        "Різновиди переходів: м’який чи крутий кросфейд, довге чи коротке відлуння, ранній чи пізній фільтр",
+        "Луп-рол тепер — розгін і дроп; для нього є дроп із фільтром і новий трек під ролом",
+        "Мікс з усієї теки — кнопкою «Створити мікс» на заголовку теки",
+        "Порядок міксу вибудовує програма: обраний трек більше не обов’язково перший",
+        "Пошук у вкладці: поле праворуч у рядку вкладок, Ctrl+F",
+        "Підказки більше не тягнуться рядком через усе вікно"
+      ],
+      "en": [
+        "Transition variants: soft or steep crossfades, long or short echo, early or late filter sweep",
+        "The loop roll is now a build and a drop, with a filtered drop and the new track under the roll",
+        "A mix from a whole folder, with Create mix on the folder header",
+        "The app orders the mix: the picked track no longer has to come first",
+        "Search in the open tab: a field at the right of the tab row, Ctrl+F",
+        "Tooltips no longer stretch across the whole window"
+      ]
+    }
+  },
+  {
+    "version": "1.0.2",
+    "date": "2026-10-04",
+    "title": {
+      "uk": "Ліцензія й точніший темп",
+      "en": "Licence and a more accurate tempo"
+    },
+    "highlights": {
+      "uk": [
+        "Ліцензійна угода: безкоштовно для некомерційного використання, DJ-виступи за гонорар і продаж міксів дозволені",
+        "Угода показується в інсталяторі, у «Довідці» й на сайті",
+        "Ліцензії сторонніх компонентів — повний перелік і тексти в «Довідці → Ліцензії сторонніх компонентів»",
+        "Темп брейкбіту більше не збивається на сітку, що випадково влучає в гучні удари (174 замість 195.7)"
+      ],
+      "en": [
+        "License agreement: free for non-commercial use, paid DJ performances and selling mixes allowed",
+        "The agreement is shown in the installer, under Help and on the site",
+        "Third-party licences — the full list and texts under Help → Third-party licenses",
+        "Breakbeat tempo no longer locks onto a grid that happens to catch loud hits (174 instead of 195.7)"
+      ]
+    }
+  },
+  {
+    "version": "1.0.1",
+    "date": "2026-10-02",
+    "title": {
+      "uk": "Виправлення міксів і рендера",
+      "en": "Mix and render fixes"
+    },
+    "highlights": {
+      "uk": [
+        "Завантажений мікс грає саме ті переходи й мітки, з якими його збережено",
+        "Рендер міксу: прибрано «кашу» й стрибки в переходах із синхронізацією темпу",
+        "Рендер вирівнює бочки треків у переходах так само, як живе відтворення",
+        "Перемотка точна до семпла — деки стають рівно на мітку входу",
+        "Версія програми в заголовку вікна"
+      ],
+      "en": [
+        "A loaded mix plays exactly the transitions and cues it was saved with",
+        "Mix render: no more smeared audio or skips in tempo-synced transitions",
+        "The render aligns the kicks in transitions just like live playback",
+        "Sample-accurate seeking — decks land exactly on the mix-in cue",
+        "App version in the window title"
+      ]
+    }
+  },
+  {
+    "version": "1.0.0",
+    "date": "2026-10-01",
+    "title": {
+      "uk": "Перший реліз",
+      "en": "First release"
+    },
+    "highlights": {
+      "uk": [
+        "Аналіз фонотеки: дробовий темп, тональність у нотації Camelot, стиль, підстиль і енергія.",
+        "Mix-вкладки: сет будується як шлях за сумісністю сусідніх пар, а не сортуванням.",
+        "Дві деки на одній шині, сім типів переходу й бас-своп окремою віссю.",
+        "Прев’ю переходу в навушниках і відлік до зони — окремий вихід, зала не чує.",
+        "Запис міксу з шини та рендер підготовленого міксу у файл.",
+        "Еквалайзер на 19 смуг із пресетами на виході міксу.",
+        "Візуалізація в окремому вікні: рельєф, що згортається в тунель і кільця в такт басу."
+      ],
+      "en": [
+        "Library analysis: fractional tempo, key in Camelot notation, style, substyle and energy.",
+        "Mix tabs: a set is built as a path through compatible neighbouring pairs, not by sorting.",
+        "Two decks on one bus, seven transition types and the bass swap as a separate choice.",
+        "Transition preview in headphones and a countdown to the zone — a separate output the room never hears.",
+        "Mix recording from the bus and rendering a prepared mix to a file.",
+        "A 19-band equalizer with presets on the mix output.",
+        "A visualisation window: terrain that folds into a tunnel and rings, driven by the bass."
+      ]
+    }
+  }
+]
