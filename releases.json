@@ -1,0 +1,270 @@
+[
+  {
+    "version": "1.1.2",
+    "date": "2026-10-14",
+    "title": {
+      "uk": "Виправлення після ручного тестування й автоматичне пересканування",
+      "en": "Fixes from manual testing, and automatic rescans"
+    },
+    "highlights": {
+      "uk": [
+        "Кожен трек пам’ятає версію програми, якою його сканували: коли аналіз оновлюється, треки, проскановані раніше, перескановуються самі при відкритті теки — з повідомленням у смузі внизу. Після оновлення до 1.1.2 бібліотека перескановується один раз",
+        "«Експортувати файли» копіює треки саме міксу й каже, скільки й куди; «Відтворити мікс» на іншій вкладці під час живого сету спершу питає, чи зупинити той, що грає",
+        "Якщо збігів немає, вкладка міксу не створюється; порожні й пошкоджені файли в мікс не потрапляють; файл без звуку на деці дає повідомлення замість тиші, а цифрова тиша більше не отримує тональність",
+        "Відкритий мікс відновлює свій «% відтворення» і тип; третій клік по заголовку повертає порядок теки, а у вкладці міксу заголовки не сортують — порядок рядків і є порядком відтворення",
+        "Еквалайзер і кнопки вікон довідки перемикають мову разом з усім, «Про програму» є англійською, заставка й смуга прогресу — українською, «4 треки» замість «4 треків»",
+        "Підказки там, де раніше нічого не відбувалось: чому друга дека поза міксом не стартує, межа довжини переходу для типу міксу; бас-своп неактивний для луп-ролу, кольори енергії не зливаються з виділенням"
+      ],
+      "en": [
+        "Every track remembers the app version that scanned it: when the analysis is updated, tracks scanned before it are rescanned on their own as their folder opens, with a message in the bar at the bottom. After updating to 1.1.2 the library is rescanned once",
+        "Export files copies the mix's own tracks and says how many and where; Play mix on another tab during a live set first asks whether to stop the one playing",
+        "With no matches no mix tab is created; empty and broken files stay out of mixes; a file with no audio on a deck gives a message instead of silence, and digital silence no longer gets a key",
+        "An opened mix restores its played percentage and type; a third click on a column header brings back the folder order, and mix tab headers do not sort — the row order is the play order",
+        "The equalizer and the help windows' buttons switch language with everything else, About is available in English, the splash and progress bar speak Ukrainian, and track counts take the right plural form",
+        "Hints where nothing used to happen: why the second deck will not start outside a mix, the transition length limit for the mix type; bass swap is inactive for a loop roll, and energy colours no longer blend into the selection"
+      ]
+    }
+  },
+  {
+    "version": "1.1.1",
+    "date": "2026-10-14",
+    "title": {
+      "uk": "Будь-який MIDI-контролер і керування переходом з пульта",
+      "en": "Any MIDI controller, and the transition run from the controller"
+    },
+    "highlights": {
+      "uk": [
+        "Будь-який MIDI-контролер на дві деки налаштовується розпізнаванням: натисніть «Розпізнати», торкніться кнопки чи ручки — програма запам’ятає її сигнал; «Розпізнати все» проходить увесь контролер поспіль, а власні рядки — для того, чого немає в списку",
+        "Пресети контролера: вбудований для Hercules DJControl Starlight не змінюється, власні перемикаються в меню й переносяться файлом; контролер помічається, коли його під’єднали чи від’єднали без перезапуску",
+        "З пульта — прослуховування переходу, «Розширений», Auto Gain, мьют деки, зсув і довжина зони переходу, а списки типу, різновиду й бас-свопу відкриваються й гортаються фейдером TEMPO чи кросфейдером, вибір — поверненням у середину чи дотиком до jog",
+        "Фейдер TEMPO веде темп деки ±8%, коли «Синхр. темп» вимкнено, а значок BPM над хвилею показує темп, як його чути; jog після двох секунд обертання перемотує вдвічі швидше",
+        "SHIFT + кнопки, кнопка навушників і дотик до jog — окремі дії для лівої й правої деки; ручку MASTER видно на регуляторах гучності дек",
+        "У міксі деку, що чекає переходу, не запустити рукою; значок «на межі» замість хрестика, коли збіг ритмів біля порогу; зрозуміліше, чому клік по хвилі не перемотує"
+      ],
+      "en": [
+        "Any two-deck MIDI controller is set up by detection: click Detect, touch a button or knob and the app remembers its signal; Detect all walks through the whole controller, and custom rows cover anything missing from the list",
+        "Controller presets: the built-in Hercules DJControl Starlight preset never changes, your own switch from the menu and travel as files; plugging the controller in or out is noticed without a restart",
+        "From the controller: the transition preview, Extended, Auto Gain, deck mute, moving and resizing the transition zone, and the type, variant and bass-swap lists open and scroll with the TEMPO fader or crossfader, choosing by returning to the middle or touching the jog",
+        "The TEMPO fader drives the deck tempo ±8% while Sync tempo is off, and the BPM badge above the waveform shows the tempo as heard; the jog seeks twice as fast after two seconds of turning",
+        "SHIFT + buttons, the headphone button and the jog touch take separate actions on the left and right deck; the MASTER knob shows on the deck volume faders",
+        "In a mix the deck waiting for its transition cannot be started by hand; a borderline badge instead of a cross when the rhythm match is near the mark; clearer messages when a click on the waveform does not seek"
+      ]
+    }
+  },
+  {
+    "version": "1.1.0",
+    "date": "2026-10-13",
+    "title": {
+      "uk": "DJ-контролер і перевірка ритмів у переході",
+      "en": "A DJ controller and rhythm checks in transitions"
+    },
+    "highlights": {
+      "uk": [
+        "Підтримка контролера Hercules DJControl Starlight: відтворення, мітки, синхронізація, фейдери, фільтр і низ дек, jog (перемотування й масштаб хвилі), пади для переходів і семплів; ручки спершу знаходять значення на екрані, а не стрибають",
+        "Вікно «Призначення елементів»: що робить кожна кнопка, ручка, пад і jog контролера — на вибір зі списку",
+        "Підсвітка основи контролера в ритм: колір енергії треку або кольорове коло, спалах на кожну долю чи лише на сильних кіках; світить дека, яку чути, а на переході — обидві",
+        "Перехід підхоплює фільтр і низ, виставлені на контролері, замість скидати їх; ручка VOLUME деки, що чекає переходу, не робить її чутною раніше, а лише обмежує рівень вступу",
+        "Перевірка, чи складаються ритми двох треків у зоні переходу, зі значком на зоні; якщо там каша, автоматика зсуває зону на цілу фразу",
+        "Жанр треку визначається точніше — за силою жанру в усіх фрагментах, а не голосуванням; рамка пари дек більше не з'являється в плейлисті"
+      ],
+      "en": [
+        "Support for the Hercules DJControl Starlight controller: play, cues, sync, deck faders, deck filter and bass, the jog wheel (seeking and waveform zoom), pads for transitions and samples; knobs first find the value on screen instead of jumping",
+        "A Control assignments window: choose from a list what each button, knob, pad and jog of the controller does",
+        "The controller's base lights up to the beat: the track's energy colour or a colour wheel, flashing on every beat or only on strong kicks; the deck being heard is lit, both during a transition",
+        "A transition picks up the filter and bass set on the controller instead of resetting them; the VOLUME knob of a deck waiting for its transition no longer makes it audible early, it only caps the entry level",
+        "A check of whether the two tracks' rhythms layer cleanly in a transition zone, shown as a badge on the zone; when they clash, the automation moves the zone by a whole phrase",
+        "A track's genre is decided more accurately — by each genre's strength across all slices rather than a vote; the deck-pair frame no longer appears in the Playlist"
+      ]
+    }
+  },
+  {
+    "version": "1.0.7",
+    "date": "2026-10-07",
+    "title": {
+      "uk": "Виправлення після ручного тестування",
+      "en": "Fixes from a full manual test"
+    },
+    "highlights": {
+      "uk": [
+        "«Відтворити мікс» після «Перший перехід» більше не грає перший трек у тиші",
+        "Перехід можна вести через фейд після останньої бочки аж до кінця треку; мітку виходу не засунути туди, де перехід не вміщується, а прослуховування звучить так само, як живий перехід",
+        "Збережений мікс і рендер беруть ті самі мітки, що на хвилі; відкриті Mix-вкладки після перезапуску відновлюються точно такими, якими були",
+        "Тональність у тезі в іншому записі (Dm проти 7A) і половинний темп більше не фарбуються червоним",
+        "Перемикання мови змінює весь інтерфейс, разом із Mix-вкладками, списками переходу й діалогами",
+        "Дрібниці: справжній масштаб біля кнопок зуму, зрозумілі повідомлення про зниклий чи пошкоджений файл, цілі підписи кнопок на вузькому вікні"
+      ],
+      "en": [
+        "Play mix after First transition no longer plays the first track in silence",
+        "A transition may run through the fade after the last kick up to the end of the track; the exit cue cannot be moved where no transition fits, and the preview sounds exactly like the live transition",
+        "A saved mix and its render use the same cues as the waveform; open Mix tabs come back after a restart exactly as they were",
+        "A key written differently in the tag (Dm against 7A) and half tempo are no longer shown in red",
+        "Switching the language changes the whole interface, Mix tabs, transition lists and dialogs included",
+        "Smaller things: the real zoom level beside the zoom buttons, clear messages about a missing or damaged file, whole button labels on a narrow window"
+      ]
+    }
+  },
+  {
+    "version": "1.0.6",
+    "date": "2026-10-07",
+    "title": {
+      "uk": "Перший запуск із заставкою",
+      "en": "A first start with a splash screen"
+    },
+    "highlights": {
+      "uk": [
+        "Перший запуск одразу показує заставку з поступом завантаження моделей аналізу стилю (~350 МБ), а не порожній екран на кілька хвилин",
+        "Обірване завантаження моделі (закрили програму, зникла мережа) більше не ламає аналіз стилю: недокачаний файл не вважається моделлю"
+      ],
+      "en": [
+        "The first start shows the splash screen with the progress of the style-analysis model download (~350 MB) straight away, instead of an empty screen for several minutes",
+        "An interrupted model download (app closed, network lost) no longer breaks style analysis: an incomplete file is not taken for a model"
+      ]
+    }
+  },
+  {
+    "version": "1.0.5",
+    "date": "2026-10-06",
+    "title": {
+      "uk": "Удвічі менший інсталятор",
+      "en": "An installer half the size"
+    },
+    "highlights": {
+      "uk": [
+        "Інсталятор зменшився з 196 до 107 МБ: з нього прибрано налагоджувальні символи й бібліотеки для інших систем, яких програма на Windows ніколи не завантажує",
+        "Coda більше не залишає 10,8 МБ у тимчасовій теці при кожному запуску, а накопичене раніше прибирає сама",
+        "Перша версія, яку можна отримати через «Довідка → Перевірити оновлення» з 1.0.4"
+      ],
+      "en": [
+        "The installer shrank from 196 to 107 MB: debug symbols and libraries for other systems, which the Windows app never loads, are gone",
+        "Coda no longer leaves 10.8 MB in the temp folder on every start, and clears what earlier versions left there",
+        "The first version that 1.0.4 can install through Help → Check for updates"
+      ]
+    }
+  },
+  {
+    "version": "1.0.4",
+    "date": "2026-10-06",
+    "title": {
+      "uk": "Оновлення з програми, нові меню",
+      "en": "Updates from the app, new menus"
+    },
+    "highlights": {
+      "uk": [
+        "«Довідка → Перевірити оновлення» і тиха перевірка під час запуску: Coda сама завантажує нову версію, звіряє її контрольну суму, встановлюється й перезапускається",
+        "Після оновлення відкривається вікно «Що нового», а вся історія — у «Довідка → Історія змін»",
+        "Меню не тягнуться через пів екрана, а потрібні пункти позначено значками; «Вигляд» тепер містить мову й тему",
+        "Ліцензії сторонніх компонентів показуються так само, як інші вікна довідки, і відкриваються миттєво",
+        "Поле пошуку акуратніше вписане в рядок вкладок",
+        "Ліцензійна угода 1.2: про перевірку оновлень і хто надає програму"
+      ],
+      "en": [
+        "Help → Check for updates and a quiet check at startup: Coda downloads the new version, verifies its checksum, installs it and restarts",
+        "After an update a What is new window opens, and the full history is under Help → Release history",
+        "Menus no longer stretch across half the screen, and the items people look for have icons; View now holds the language and theme",
+        "Third-party licences look like the other Help windows and open instantly",
+        "The search field sits more neatly in the tab row",
+        "License agreement 1.2: about the update check and who provides the program"
+      ]
+    }
+  },
+  {
+    "version": "1.0.3",
+    "date": "2026-10-06",
+    "title": {
+      "uk": "Різновиди переходів, мікс з теки й пошук",
+      "en": "Transition variants, folder mixes and search"
+    },
+    "highlights": {
+      "uk": [
+        "Різновиди переходів: м’який чи крутий кросфейд, довге чи коротке відлуння, ранній чи пізній фільтр",
+        "Луп-рол тепер — розгін і дроп; для нього є дроп із фільтром і новий трек під ролом",
+        "Мікс з усієї теки — кнопкою «Створити мікс» на заголовку теки",
+        "Порядок міксу вибудовує програма: обраний трек більше не обов’язково перший",
+        "Пошук у вкладці: поле праворуч у рядку вкладок, Ctrl+F",
+        "Підказки більше не тягнуться рядком через усе вікно"
+      ],
+      "en": [
+        "Transition variants: soft or steep crossfades, long or short echo, early or late filter sweep",
+        "The loop roll is now a build and a drop, with a filtered drop and the new track under the roll",
+        "A mix from a whole folder, with Create mix on the folder header",
+        "The app orders the mix: the picked track no longer has to come first",
+        "Search in the open tab: a field at the right of the tab row, Ctrl+F",
+        "Tooltips no longer stretch across the whole window"
+      ]
+    }
+  },
+  {
+    "version": "1.0.2",
+    "date": "2026-10-04",
+    "title": {
+      "uk": "Ліцензія й точніший темп",
+      "en": "Licence and a more accurate tempo"
+    },
+    "highlights": {
+      "uk": [
+        "Ліцензійна угода: безкоштовно для некомерційного використання, DJ-виступи за гонорар і продаж міксів дозволені",
+        "Угода показується в інсталяторі, у «Довідці» й на сайті",
+        "Ліцензії сторонніх компонентів — повний перелік і тексти в «Довідці → Ліцензії сторонніх компонентів»",
+        "Темп брейкбіту більше не збивається на сітку, що випадково влучає в гучні удари (174 замість 195.7)"
+      ],
+      "en": [
+        "License agreement: free for non-commercial use, paid DJ performances and selling mixes allowed",
+        "The agreement is shown in the installer, under Help and on the site",
+        "Third-party licences — the full list and texts under Help → Third-party licenses",
+        "Breakbeat tempo no longer locks onto a grid that happens to catch loud hits (174 instead of 195.7)"
+      ]
+    }
+  },
+  {
+    "version": "1.0.1",
+    "date": "2026-10-02",
+    "title": {
+      "uk": "Виправлення міксів і рендера",
+      "en": "Mix and render fixes"
+    },
+    "highlights": {
+      "uk": [
+        "Завантажений мікс грає саме ті переходи й мітки, з якими його збережено",
+        "Рендер міксу: прибрано «кашу» й стрибки в переходах із синхронізацією темпу",
+        "Рендер вирівнює бочки треків у переходах так само, як живе відтворення",
+        "Перемотка точна до семпла — деки стають рівно на мітку входу",
+        "Версія програми в заголовку вікна"
+      ],
+      "en": [
+        "A loaded mix plays exactly the transitions and cues it was saved with",
+        "Mix render: no more smeared audio or skips in tempo-synced transitions",
+        "The render aligns the kicks in transitions just like live playback",
+        "Sample-accurate seeking — decks land exactly on the mix-in cue",
+        "App version in the window title"
+      ]
+    }
+  },
+  {
+    "version": "1.0.0",
+    "date": "2026-10-01",
+    "title": {
+      "uk": "Перший реліз",
+      "en": "First release"
+    },
+    "highlights": {
+      "uk": [
+        "Аналіз фонотеки: дробовий темп, тональність у нотації Camelot, стиль, підстиль і енергія.",
+        "Mix-вкладки: сет будується як шлях за сумісністю сусідніх пар, а не сортуванням.",
+        "Дві деки на одній шині, сім типів переходу й бас-своп окремою віссю.",
+        "Прев’ю переходу в навушниках і відлік до зони — окремий вихід, зала не чує.",
+        "Запис міксу з шини та рендер підготовленого міксу у файл.",
+        "Еквалайзер на 19 смуг із пресетами на виході міксу.",
+        "Візуалізація в окремому вікні: рельєф, що згортається в тунель і кільця в такт басу."
+      ],
+      "en": [
+        "Library analysis: fractional tempo, key in Camelot notation, style, substyle and energy.",
+        "Mix tabs: a set is built as a path through compatible neighbouring pairs, not by sorting.",
+        "Two decks on one bus, seven transition types and the bass swap as a separate choice.",
+        "Transition preview in headphones and a countdown to the zone — a separate output the room never hears.",
+        "Mix recording from the bus and rendering a prepared mix to a file.",
+        "A 19-band equalizer with presets on the mix output.",
+        "A visualisation window: terrain that folds into a tunnel and rings, driven by the bass."
+      ]
+    }
+  }
+]
